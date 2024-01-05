@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.weblogo{
+    width:150px;
+    height:35px;
+    background-image: url("../images/website\ Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+}
+.header{
+    height: 35px;
+    align-items: end;
+
+}
