@@ -6,7 +6,7 @@
 .weblogo{
     width:150px;
     height:35px;
-    background-image: url("../images/website\ Logo.png");
+    background-image: url("../images/weblogo.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 0px;
@@ -15,4 +15,58 @@
     height: 35px;
     align-items: end;
 
+}
+.homepage{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.homeimage{
+    width:95%;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.descriptiontab{
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    left:150px;
+    bottom: 10px;
+    box-shadow: 5px 5px rgba(90, 89, 89, 0.557);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+.nature{
+    background-color: #3c00ff;
+    color: white;
+    padding:2px 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 6px;
+}
+
+.author{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.authorimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    background-image: url('../images/photo.jpg');
+    background-size: cover;
+}
+h6{
+    color: rgb(118, 118, 114);
 }

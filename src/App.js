@@ -4,12 +4,20 @@ import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import Latest from "./Components/Latest";
 import Contact from "./Components/Contact";
+import data from "./data";
 function App() {
   const [selectHome,setHome]=useState(true);
   const [selectBlog,setBlog]=useState(false);
   const [selectLatest,setLatest]=useState(false);
   const [selectContact,setContact]=useState(false);
-  
+  const dataji={
+      id:1,
+      name:'Kartik Ranaut',
+      Date:'January 4, 2024',
+      title:'Architecture style of Indian temples',
+      nature:"Architecture",
+      image:"https://img.veenaworld.com/wp-content/uploads/2021/02/10-Famous-South-Indian-Temples-You-Should-Not-Miss.jpg"
+  };
   function turnAllFalse(){
     setBlog(false);
     setHome(false);
@@ -49,7 +57,7 @@ function App() {
         </div>
       </div>
       <div className="Container">
-        {selectHome && <Home></Home>}
+        {selectHome && <Home {...dataji}></Home>}
         {selectBlog && <Blog></Blog>}
         {selectLatest && <Latest></Latest>}
         {selectContact && <Contact></Contact>}

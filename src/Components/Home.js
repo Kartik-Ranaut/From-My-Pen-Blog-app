@@ -1,7 +1,11 @@
 import React from 'react'
-
-export default function Home() {
+import Description from './Description'
+export default function Home({name,id,Date,title,image,nature}) {
+    
   return (
-    <div>Home</div>
+    <div className='homepage'>
+        <img className='homeimage' src={image}></img>
+        <Description title={title} name={name} Date={Date} nature={nature}></Description>
+    </div>
   )
 }
