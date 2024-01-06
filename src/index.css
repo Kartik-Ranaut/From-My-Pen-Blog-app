@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.lightmode{
+    --text-color:black;
+    --background-color:white;
+    --card-bg:#e2e2e8;
+    --image:
+}
+.darkmode{
+    --text-color:white;
+    --background-color:black;
+    --card-bg:#2d2d31;
+}
 
-.weblogo{
+.lightmode .app .header .weblogo{
     width:150px;
     height:35px;
     background-image: url("../images/weblogo.png");
@@ -11,10 +22,39 @@
     background-repeat: no-repeat;
     padding-top: 0px;
 }
-.header{
-    height: 35px;
-    align-items: end;
 
+.darkmode .app .header .weblogo{
+    width:150px;
+    height:35px;
+    background-image: url("../images/weblogodark.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+ 
+.container{
+    padding-top: 45px;
+    background-color: var(--background-color);
+    height: 100%;
+}
+.header{
+    height: 50px;
+    align-items: end;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: end;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .homepage{
     width: 100%;
@@ -35,7 +75,7 @@
     width: 450px;
     height: 250px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--background-color);
     left:150px;
     bottom: 10px;
     box-shadow: 5px 5px rgba(90, 89, 89, 0.557);
@@ -58,15 +98,55 @@
     display: flex;
     gap:20px;
     align-items: center;
+    background-color: inherit;
 }
 .authorimg{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
     background-image: url('../images/photo.jpg');
     background-size: cover;
 }
 h6{
     color: rgb(118, 118, 114);
+    background-color: inherit;
+}
+
+.card{
+    width: 372px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    padding: 20px;
+    gap: 10px;
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+
+    border-radius: 12px;
+}
+
+.cardimage{
+    width: 340px;
+    height: 240px;
+    border-radius: 6px;
+}
+h1{
+    background-color: inherit;
+}
+.blogsec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+.search{
+    width: 190px;
+    display: flex;
+    gap: 10px;
+
+}
+.search input{
+    width: 150px;
 }

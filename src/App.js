@@ -1,10 +1,9 @@
 import "./App.css";
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import Latest from "./Components/Latest";
 import Contact from "./Components/Contact";
-import data from "./data";
 function App() {
   const [selectHome,setHome]=useState(true);
   const [selectBlog,setBlog]=useState(false);
@@ -41,10 +40,21 @@ function App() {
     turnAllFalse();
     setContact(true);
   }
-
+  const [theme,setTheme]=useState("lightmode");
+  function changetheme(){
+    if(theme==="darkmode"){
+      setTheme("lightmode")
+    }
+    else{
+      setTheme("darkmode")
+    }
+  }
+  useEffect(()=>{
+    document.body.className=theme;
+  },[theme])
   return (
-    <div>
-      <div className="header flex justify-between w-100vh pl-7 pr-7">
+    <div className="app">
+      <div className="header">
         <div className="weblogo"></div>
         <div className="Links flex justify-between w-4/12 text-xl cursor-pointer ">
           <a onClick={homeHandler}>Home</a>
@@ -54,9 +64,10 @@ function App() {
         </div>
         <div className="search">
           <input type="text" placeholder="search"></input>
+          <button onClick={changetheme}>*</button>
         </div>
       </div>
-      <div className="Container">
+      <div className="container">
         {selectHome && <Home {...dataji}></Home>}
         {selectBlog && <Blog></Blog>}
         {selectLatest && <Latest></Latest>}
