@@ -189,3 +189,6 @@ img{
     flex-direction: column;
     gap: 10px;
 }
+p{
+    text-align: justify;
+}
