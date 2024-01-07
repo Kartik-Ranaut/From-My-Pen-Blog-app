@@ -9,6 +9,7 @@ function App() {
   const [selectBlog,setBlog]=useState(false);
   const [selectLatest,setLatest]=useState(false);
   const [selectContact,setContact]=useState(false);
+  const [themeimage,setthemeimage]=useState(<i class="fa-solid fa-moon"></i>);
   const dataji={
       id:1,
       name:'Kartik Ranaut',
@@ -43,10 +44,12 @@ function App() {
   const [theme,setTheme]=useState("lightmode");
   function changetheme(){
     if(theme==="darkmode"){
-      setTheme("lightmode")
+      setTheme("lightmode");
+      setthemeimage(<i class="fa-solid fa-moon"></i>);
     }
     else{
-      setTheme("darkmode")
+      setTheme("darkmode");
+      setthemeimage(<i class="fa-regular fa-sun"></i>);
     }
   }
   useEffect(()=>{
@@ -63,8 +66,8 @@ function App() {
           <a onClick={contactHandler}>Contact</a>
         </div>
         <div className="search">
-          <input type="text" placeholder="search"></input>
-          <button onClick={changetheme}>*</button>
+          <input className="srch" type="text" placeholder="search"></input>
+          <button className="themechangebtn" onClick={changetheme}>{themeimage}</button>
         </div>
       </div>
       <div className="container">

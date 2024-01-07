@@ -44,6 +44,7 @@
     height: 100%;
 }
 .header{
+    margin: 0px;
     height: 50px;
     align-items: end;
     position: fixed;
@@ -144,9 +145,30 @@ h1{
 .search{
     width: 190px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
 }
-.search input{
+
+.srch{
     width: 150px;
+    padding: 2px 15px;
+    outline:none;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+}
+.search:checked{
+    border: 1px solid var(--text-color);
+
+}
+.themechangebtn:active{
+    animation: rotate 1s alternate 1;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
