@@ -73,7 +73,7 @@ function App() {
       <div className="container">
         {selectHome && <Home {...dataji}></Home>}
         {selectBlog && <Blog></Blog>}
-        {selectLatest && <Latest></Latest>}
+        {selectLatest && <Latest dataji={dataji}></Latest>}
         {selectContact && <Contact></Contact>}
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from 'react'
+import Temples from './Temples'
 
-export default function Latest() {
+export default function Latest(props) {
   return (
-    <div>Latest</div>
+    <Temples {...props.dataji}></Temples>
   )
 }
