@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::selection {
+    color: var(--background-color);
+    background: var(--text-color);
+  }
+
+
 
 .lightmode{
     --text-color:black;
@@ -96,6 +102,7 @@
     width: fit-content;
     height: fit-content;
     border-radius: 6px;
+    user-select: none;
 }
 
 .author{
@@ -103,6 +110,7 @@
     gap:20px;
     align-items: center;
     background-color: inherit;
+    user-select: none;
 }
 .authorimg{
     width: 40px;
@@ -136,6 +144,7 @@ h6{
     border-radius: 6px;
 }
 h1{
+    user-select: none;
     background-color: inherit;
 }
 .blogsec{
@@ -167,8 +176,11 @@ i{
     border: 1px solid var(--text-color);
 
 }
+.themechangebtn:hover{
+    animation: rotate 3s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+}
 .themechangebtn:active{
-    animation: rotate 1s alternate cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+    animation: rotate 1s  cubic-bezier(0.075, 0.82, 0.165, 1) 1;
 }
 
 @keyframes rotate {
@@ -191,4 +203,33 @@ img{
 }
 p{
     text-align: justify;
+}
+a{
+    user-select: none;
+}
+::placeholder{
+    user-select: none;
+}
+.contactmainform{
+    width: 100%;
+    height: 100%;
+}
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 450px;
+    border: 1px solid black;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    color: var(--background-color);
+}
+table{
+    width: 50%;
+    height: 450px;
+    border: 1px solid black;
+    margin-left: 40px;
 }
