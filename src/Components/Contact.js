@@ -6,7 +6,7 @@ export default function Contact() {
       <h1>Contact Us</h1>
       <div className='contactmainform flex'>
         <div className='contactinfo'>
-          <div>
+          <div className='headingcontact'>
             <h2 className='font-bold text-xl'>Contact Information</h2>
             <h4>Kindly contact to give feedback</h4>
           </div>

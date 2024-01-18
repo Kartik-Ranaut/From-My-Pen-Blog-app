@@ -242,3 +242,8 @@ table{
     background-color: inherit;
     color: var(--background-color);
 }
+
+.headingcontact h2,.headingcontact h4{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
