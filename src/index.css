@@ -237,3 +237,8 @@ table{
     background-color: inherit;
     color: var(--background-color);
 }
+
+.phone a, .phone i{
+    background-color: inherit;
+    color: var(--background-color);
+}
