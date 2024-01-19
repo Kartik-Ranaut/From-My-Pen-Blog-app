@@ -224,14 +224,16 @@ a{
     padding: 40px 20px;
     box-sizing: border-box;
     background-color: var(--text-color);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ 
     color: var(--background-color);
 }
 table{
     width: 50%;
     height: 450px;
     border: 1px solid black;
-    margin-left: 40px;
+    border-radius: 10px;
 }
 .links a, .links i{
     background-color: inherit;
