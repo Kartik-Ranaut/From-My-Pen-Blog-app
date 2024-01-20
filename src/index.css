@@ -232,8 +232,8 @@ a{
 table{
     width: 50%;
     height: 450px;
-    border: 1px solid black;
-    border-radius: 10px;
+   
+    border: 1px solid var(--text-color);
 }
 .links a, .links i{
     background-color: inherit;
@@ -248,4 +248,7 @@ table{
 .headingcontact h2,.headingcontact h4{
     background-color: var(--text-color);
     color: var(--background-color);
+}
+.feedbacksection{
+    border-radius: 30px;
 }
