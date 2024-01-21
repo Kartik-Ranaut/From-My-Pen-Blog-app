@@ -52,10 +52,18 @@ function App() {
   return (
     <div className="app">
       <div className="mobileview flex justify-evenly w-4/12 text-xl cursor-pointer">
-          <a onClick={homeHandler}>Home</a>
-          <a onClick={blogHandler}>Blog</a>
-          <a onClick={latestHandler}>Latest</a>
-          <a onClick={contactHandler}>Contact</a>
+          <a onClick={homeHandler}>
+          <i class="fa-solid fa-house"></i>
+          <h6>Home</h6></a>
+          <a onClick={blogHandler}>
+          <i class="fa-solid fa-blog"></i>
+          <h6>Blog</h6></a>
+          <a onClick={latestHandler}>
+          <i class="fa-solid fa-bolt"></i>
+          <h6>Latest</h6></a>
+          <a onClick={contactHandler}>
+          <i class="fa-solid fa-address-card"></i>
+          <h6>Contact</h6></a>
       </div>
       <div className="header">
         <div className="weblogo"></div>
