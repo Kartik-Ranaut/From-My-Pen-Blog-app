@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Contact() {
+  function submitfunction(){
+    alert("dear kartik your message is submitted to us.")
+  }
   return (
     <div>
       <div className='contactmainform flex'>
@@ -21,37 +24,40 @@ export default function Contact() {
           </div>
         </div>
         <div className='feedbacksection'>
-          <table>
-            <tr>
-              <td>
-                <h3>First Name</h3><br></br>
-                <input type='text' placeholder='ram'></input>
-              </td>
-              <td>
-                <h3>Last Name</h3><br></br>
-                <input type='text'></input>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>Email</h3><br></br>
-                <input type='text' placeholder='ram'></input>
-              </td>
-              <td>
-                <h3>Phone no.</h3><br></br>
-                <input type='text'></input>
-              </td>
-
-            </tr>
-            <tr>
+        <form onSubmit={submitfunction}>
+            <table>
               <tr>
-                <td colSpan={2}>
-                  <h3>Message</h3>
-                  <input type='text'></input>
+                <td>
+                  <h3>First Name</h3>
+                  <input type='text' required></input>
+                </td>
+                <td>
+                  <h3>Last Name</h3>
+                  <input type='text' required></input>
                 </td>
               </tr>
-            </tr>
-          </table>
+              <tr>
+                <td>
+                  <h3>Email</h3>
+                  <input type='text' required></input>
+                </td>
+                <td>
+                  <h3>Phone no.</h3>
+                  <input type='text' required></input>
+                </td>
+
+              </tr>
+              <tr>
+                  <td colSpan={2}>
+                    <h3>Message</h3>
+                    <input type='text' required></input>
+                  </td>
+              </tr>
+              <tr>
+                <td colSpan={2} > <input type='submit' className='submitbtn'></input></td>
+              </tr>
+            </table>
+          </form>
         </div>
       </div>
     </div>
