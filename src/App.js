@@ -51,6 +51,12 @@ function App() {
   },[theme])
   return (
     <div className="app">
+      <div className="mobileview flex justify-evenly w-4/12 text-xl cursor-pointer">
+          <a onClick={homeHandler}>Home</a>
+          <a onClick={blogHandler}>Blog</a>
+          <a onClick={latestHandler}>Latest</a>
+          <a onClick={contactHandler}>Contact</a>
+      </div>
       <div className="header">
         <div className="weblogo"></div>
         <div className="Links flex justify-between w-4/12 text-xl cursor-pointer ">

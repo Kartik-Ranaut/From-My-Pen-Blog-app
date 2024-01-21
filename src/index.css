@@ -93,7 +93,7 @@
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
-
+    
 }
 .nature{
     background-color: #3c00ff;
@@ -276,4 +276,21 @@ td{
     height: fit-content;
     border-radius: 6px;
     user-select: none;
+}
+
+.mobileview{
+    visibility: hidden;
+    height: 0px;
+}
+@media (width<1000px) {
+    .Links{
+        visibility: hidden;
+    }
+    .mobileview{
+        visibility: visible;
+        height: fit-content;
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+    }
 }
