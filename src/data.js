@@ -8,6 +8,14 @@ const data=[
         image:"https://img.veenaworld.com/wp-content/uploads/2021/02/10-Famous-South-Indian-Temples-You-Should-Not-Miss.jpg"
     },
     {
+        id:6,
+        name:'Kartik Ranaut',
+        Date:'Comming soon !!',
+        title:'vande mataram',
+        nature:"Nationalism",
+        image:"https://sc0.blr1.digitaloceanspaces.com/facebook/805247-facebook-ridmmosaqd-1458185892.jpeg"
+    },
+    {
         id:2,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
@@ -38,14 +46,6 @@ const data=[
         title:'Judicial system in India',
         nature:"Civics",
         image:"https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/02/08101709/11a129d0-11c7-439d-a8ae-586e5f56136c.jpg"
-    },
-    {
-        id:6,
-        name:'Kartik Ranaut',
-        Date:'Comming soon !!',
-        title:'Rivers in India',
-        nature:"Geography",
-        image:"https://upload.wikimedia.org/wikipedia/commons/5/54/Dawki_River%2C_Meghalaya.jpg"
     }
 ];
 export default data;
