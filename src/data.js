@@ -8,7 +8,7 @@ const data=[
         image:"https://img.veenaworld.com/wp-content/uploads/2021/02/10-Famous-South-Indian-Temples-You-Should-Not-Miss.jpg"
     },
     {
-        id:6,
+        id:2,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
         title:'vande mataram',
@@ -16,7 +16,7 @@ const data=[
         image:"https://sc0.blr1.digitaloceanspaces.com/facebook/805247-facebook-ridmmosaqd-1458185892.jpeg"
     },
     {
-        id:2,
+        id:3,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
         title:'Vijayanagara Empire',
@@ -24,7 +24,7 @@ const data=[
         image:"https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/b8/d9.jpg"
     },
     {
-        id:3,
+        id:4,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
         title:'Chattarpati Shivaji maharaj',
@@ -32,7 +32,7 @@ const data=[
         image:"https://www.tallengestore.com/cdn/shop/products/Chattarapati_Shivaji_Maharaj_Coronation_Painting_bd690f76-712b-41c6-af69-4f43d2eeca57.jpg?v=1570244747"
     },
     {
-        id:4,
+        id:5,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
         title:'Administration mechanism of Britshers in India',
@@ -40,7 +40,7 @@ const data=[
         image:"https://th-i.thgim.com/public/thread/456kl3/article52568304.ece/alternates/LANDSCAPE_1200/British%20in%20India"
     },
     {
-        id:5,
+        id:6,
         name:'Kartik Ranaut',
         Date:'Comming soon !!',
         title:'Judicial system in India',

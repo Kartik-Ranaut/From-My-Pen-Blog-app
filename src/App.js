@@ -4,12 +4,14 @@ import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import Latest from "./Components/Latest";
 import Contact from "./Components/Contact";
+import Temples from "./Components/Temples";
 import data from "./data";
 function App() {
   const [selectHome,setHome]=useState(true);
   const [selectBlog,setBlog]=useState(false);
   const [selectLatest,setLatest]=useState(false);
   const [selectContact,setContact]=useState(false);
+  const [selectTemple,setTemple]=useState(false);
   const [themeimage,setthemeimage]=useState(<i class="fa-solid fa-moon"></i>);
   const dataji=data[0];
   function turnAllFalse(){
@@ -17,8 +19,12 @@ function App() {
     setHome(false);
     setLatest(false);
     setContact(false);
+    setTemple(false);
   }
-
+  function templeHandler(){
+    turnAllFalse();
+    setTemple(true);
+  }
   function homeHandler(){
     turnAllFalse();
     setHome(true);
@@ -80,9 +86,10 @@ function App() {
       </div>
       <div className="container">
         {selectHome && <Home {...dataji}></Home>}
-        {selectBlog && <Blog></Blog>}
-        {selectLatest && <Latest dataji={dataji}></Latest>}
+        {selectBlog && <Blog templeHandler={templeHandler}></Blog>}
+        {selectLatest && <Latest></Latest>}
         {selectContact && <Contact></Contact>}
+        {selectTemple && <Temples></Temples>}
       </div>
     </div>
   );
