@@ -5,6 +5,7 @@ import Blog from "./Components/Blog";
 import Latest from "./Components/Latest";
 import Contact from "./Components/Contact";
 import Temples from "./Components/Temples";
+import VandeMataram from "./Components/VandeMataram";
 import data from "./data";
 function App() {
   const [selectHome,setHome]=useState(true);
@@ -12,6 +13,8 @@ function App() {
   const [selectLatest,setLatest]=useState(false);
   const [selectContact,setContact]=useState(false);
   const [selectTemple,setTemple]=useState(false);
+  const [selectVandemataram,setVandemataram]=useState(false);
+
   const [themeimage,setthemeimage]=useState(<i class="fa-solid fa-moon"></i>);
   const dataji=data[0];
   function turnAllFalse(){
@@ -20,10 +23,16 @@ function App() {
     setLatest(false);
     setContact(false);
     setTemple(false);
+    setVandemataram(false);
+
   }
   function templeHandler(){
     turnAllFalse();
     setTemple(true);
+  }
+  function VandeMataramHandler(){
+    turnAllFalse();
+    setVandemataram(true);
   }
   function homeHandler(){
     turnAllFalse();
@@ -86,10 +95,11 @@ function App() {
       </div>
       <div className="container">
         {selectHome && <Home {...dataji}></Home>}
-        {selectBlog && <Blog templeHandler={templeHandler}></Blog>}
+        {selectBlog && <Blog templeHandler={templeHandler} VandeMataramHandler={VandeMataramHandler}></Blog>}
         {selectLatest && <Latest></Latest>}
         {selectContact && <Contact></Contact>}
         {selectTemple && <Temples></Temples>}
+        {selectVandemataram && <VandeMataram></VandeMataram>}
       </div>
     </div>
   );

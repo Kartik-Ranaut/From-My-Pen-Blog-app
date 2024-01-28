@@ -1,15 +1,15 @@
-import React from 'react'
-import Nature from './Nature'
-import Author from './Author'
-import data from '../data'
+import React from 'react';
+import data from '../data';
+import Nature from './Nature';
+import Author from './Author';
 
-export default function Temples() {
+export default function VandeMataram() {
   return (
     <div className='content-article'>
-        <Nature nature={data[0].nature}> </Nature>
-        <h1 className='text-3xl'>{data[0].title}</h1>
-        <Author Date={data[0].Date} ></Author>
-        <img src={data[0].image}></img>
+        <Nature nature={data[1].nature}> </Nature>
+        <h1 className='text-3xl'>{data[1].title}</h1>
+        <Author Date={data[1].Date} ></Author>
+        <img src={data[1].image}></img>
         <p>
         India is Home to millions of temples which are the places of worship and also the source of economy in the ancient times and some what in modern India also. If we look the architecture of these temples we will find a great similarity between them that helps us to categorise them into three main categories, let’s discuss them in detail…
         <br></br> <br></br>

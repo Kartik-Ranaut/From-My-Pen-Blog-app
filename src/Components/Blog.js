@@ -6,6 +6,9 @@ export default function Blog(props) {
     if(id==1){
       props.templeHandler();
     }
+    if(id==2){
+      props.VandeMataramHandler();
+    }
   }
   return (
   <div className='blogsec'>
