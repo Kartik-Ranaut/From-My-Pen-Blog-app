@@ -5,9 +5,7 @@ export default function Description({name,Date,title,nature}) {
   return (
     <div className='descriptiontab'>
       <Nature nature={nature}></Nature>
-      <h1 className='text-3xl'>{title}</h1>
-      <br></br>
-      <br></br>
+      <h1 className='titledescription text-3xl'>{title}</h1>
       <Author Date={Date}></Author>
     </div>
   )
