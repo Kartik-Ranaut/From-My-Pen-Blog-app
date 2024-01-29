@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/from-my-pen/static/css/main.23902e08.css",
-    "main.js": "/from-my-pen/static/js/main.0605ff7e.js",
-    "static/media/photo.jpg": "/from-my-pen/static/media/photo.0dee5b39ca57cfa500e8.jpg",
-    "static/media/weblogo.png": "/from-my-pen/static/media/weblogo.27a631f4920a1a9614c2.png",
-    "static/media/weblogodark.jpg": "/from-my-pen/static/media/weblogodark.48d30416fd8043246501.jpg",
-    "index.html": "/from-my-pen/index.html",
-    "main.23902e08.css.map": "/from-my-pen/static/css/main.23902e08.css.map",
-    "main.0605ff7e.js.map": "/from-my-pen/static/js/main.0605ff7e.js.map"
+    "main.css": "/FromMyPen/static/css/main.3fb85590.css",
+    "main.js": "/FromMyPen/static/js/main.0605ff7e.js",
+    "static/media/photo.jpg": "/FromMyPen/static/media/photo.0dee5b39ca57cfa500e8.jpg",
+    "static/media/weblogo.png": "/FromMyPen/static/media/weblogo.27a631f4920a1a9614c2.png",
+    "static/media/weblogodark.jpg": "/FromMyPen/static/media/weblogodark.48d30416fd8043246501.jpg",
+    "index.html": "/FromMyPen/index.html",
+    "main.3fb85590.css.map": "/FromMyPen/static/css/main.3fb85590.css.map",
+    "main.0605ff7e.js.map": "/FromMyPen/static/js/main.0605ff7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.23902e08.css",
+    "static/css/main.3fb85590.css",
     "static/js/main.0605ff7e.js"
   ]
 }
