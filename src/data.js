@@ -10,7 +10,7 @@ const data=[
     {
         id:2,
         name:'Kartik Ranaut',
-        Date:'Comming soon !!',
+        Date:'January 2, 2024',
         title:'Vande mataram meaning in Hindi',
         nature:"Nationalism",
         image:"https://sc0.blr1.digitaloceanspaces.com/facebook/805247-facebook-ridmmosaqd-1458185892.jpeg"
