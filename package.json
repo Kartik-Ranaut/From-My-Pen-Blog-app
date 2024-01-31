@@ -2,7 +2,7 @@
   "homepage": "https://kartik-ranaut.github.io/FromMyPen",
   "name": "react-tailwind-css-starter-pack",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
